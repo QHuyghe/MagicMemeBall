@@ -5,11 +5,28 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './base.component.html',
   styleUrls: ['./base.component.scss']
 })
-export class BaseComponent implements OnInit {
+export class BaseComponent {
+
+  inputText: string = '';
+  activeImg: string = 'assets/img/8ball.png';
+  images = [
+    'assets/img/no.png',
+    'assets/img/yes.jpg',
+    'assets/img/shrug.jpg',
+    'assets/img/tryagain.jpg'
+  ]
+  loading: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  answer() {
+    if (this.inputText === '') {
+      return;
+    }
+    this.loading = true;
+    setTimeout(() => {
+      this.activeImg = this.images[Math.floor(Math.random() * 4)];
+      this.loading = false;
+    }, 3000);
   }
-
 }
