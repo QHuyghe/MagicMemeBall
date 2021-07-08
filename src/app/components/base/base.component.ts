@@ -20,9 +20,6 @@ export class BaseComponent {
   constructor() { }
 
   answer() {
-    if (this.inputText === '') {
-      return;
-    }
     this.loading = true;
     setTimeout(() => {
       this.activeImg = this.images[Math.floor(Math.random() * 4)];

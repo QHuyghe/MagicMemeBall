@@ -10,5 +10,5 @@
         <input type="text" matInput [(ngModel)]='inputText'>
     </mat-form-field>
 
-    <button mat-raised-button color="primary" (click)="answer()">Try my luck!</button>
+    <button mat-raised-button color="primary" (click)="answer()" [disabled]="inputText === ''">Try my luck!</button>
 </div>
