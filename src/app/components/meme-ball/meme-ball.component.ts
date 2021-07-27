@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-base',
-  templateUrl: './base.component.html',
-  styleUrls: ['./base.component.scss']
+  selector: 'app-meme-ball',
+  templateUrl: './meme-ball.component.html',
+  styleUrls: ['./meme-ball.component.scss']
 })
-export class BaseComponent {
+export class MemeBallComponent {
 
   inputText: string = '';
   activeImg: string = 'assets/img/8ball.png';

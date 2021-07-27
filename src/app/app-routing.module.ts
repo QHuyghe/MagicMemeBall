@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BaseComponent } from './components/base/base.component';
+import { MemeBallComponent } from './components/meme-ball/meme-ball.component';
+import { PixelArtComponent } from './components/pixel-art/pixel-art.component';
 
 const routes: Routes = [
-  { path: 'memes', component: BaseComponent },
+  { path: 'memes', component: MemeBallComponent },
+  { path: 'pixel', component: PixelArtComponent },
   { path: '', redirectTo: 'memes', pathMatch: 'full' },
   { path: '**', redirectTo: 'memes', pathMatch: 'full' }
 ];

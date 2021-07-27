@@ -3,15 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BaseComponent } from './components/base/base.component';
+import { MemeBallComponent } from './components/meme-ball/meme-ball.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
+import { PixelArtComponent } from './components/pixel-art/pixel-art.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent
+    MemeBallComponent,
+    PixelArtComponent
   ],
   imports: [
     BrowserModule,
