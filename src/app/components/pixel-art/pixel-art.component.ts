@@ -14,6 +14,7 @@ export class PixelArtComponent {
   displayContextMenu = false;
   contextX = 0;
   contextY = 0;
+  cursorDragging = false;
 
   constructor() { 
     const rows = Math.floor(window.innerHeight / (window.innerWidth / 100))
@@ -44,6 +45,12 @@ export class PixelArtComponent {
       return;
     }
     square.color = this.activeColor;
+  }
+
+  updateColorDragging(square: SquareObject) {
+    if (this.cursorDragging) {
+      square.color = this.activeColor;
+    }
   }
 }
 

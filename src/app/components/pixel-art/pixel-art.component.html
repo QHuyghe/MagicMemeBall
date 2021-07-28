@@ -1,6 +1,9 @@
 <div class="vertical-row" *ngFor="let row of god">
     <div class="square" 
         (click)="updateColor(box)"
+        (mousedown)="cursorDragging = true; false"
+        (mouseup)="cursorDragging = false; false"
+        (mouseenter)="updateColorDragging(box)"
         (contextmenu)="showContextMenu($event); false"
         *ngFor="let box of row.squares" 
         [style.background]="box.color">
