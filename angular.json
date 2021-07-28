@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "magicMemeBall": {
+    "oddJobs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "magicMemeBall:build:production"
+              "browserTarget": "oddJobs:build:production"
             },
             "development": {
-              "browserTarget": "magicMemeBall:build:development"
+              "browserTarget": "oddJobs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "magicMemeBall:build"
+            "browserTarget": "oddJobs:build"
           }
         },
         "test": {
@@ -109,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "magicMemeBall"
+  "defaultProject": "oddJobs"
 }

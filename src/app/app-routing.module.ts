@@ -6,8 +6,7 @@ import { PixelArtComponent } from './components/pixel-art/pixel-art.component';
 const routes: Routes = [
   { path: 'memes', component: MemeBallComponent },
   { path: 'pixel', component: PixelArtComponent },
-  { path: '', redirectTo: 'memes', pathMatch: 'full' },
-  { path: '**', redirectTo: 'memes', pathMatch: 'full' }
+  { path: '**', redirectTo: 'pixel', pathMatch: 'full' }
 ];
 
 @NgModule({
